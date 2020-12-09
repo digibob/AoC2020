@@ -53,6 +53,7 @@
     <Compile Include="Puzzle06.cs" />
     <Compile Include="Puzzle07.cs" />
     <Compile Include="Puzzle08.cs" />
+    <Compile Include="Puzzle09.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -80,6 +81,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Inputs\puzzle08.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\puzzle09.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
