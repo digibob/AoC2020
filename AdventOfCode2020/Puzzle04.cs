@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2020
 {
@@ -55,7 +53,7 @@ namespace AdventOfCode2020
             RunPart2();
         }
 
-        void RunPart1()
+        private void RunPart1()
         {
             int count = documents.Count(x =>
             {
@@ -64,7 +62,7 @@ namespace AdventOfCode2020
 
             Console.WriteLine("{0}", count);
         }
-        void RunPart2()
+        private void RunPart2()
         {
             int count = documents.Count(x =>
             {

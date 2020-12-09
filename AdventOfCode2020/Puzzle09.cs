@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2020
 {
@@ -10,7 +8,7 @@ namespace AdventOfCode2020
     {
         public Puzzle09(string[] lines)
         {
-            input = lines.Select(l => Int64.Parse(l)).ToArray();
+            input = lines.Select(l => long.Parse(l)).ToArray();
         }
 
         public void Run()
@@ -19,11 +17,11 @@ namespace AdventOfCode2020
             RunTest2();
         }
 
-        bool FindSum(Int64 value, IEnumerable<Int64> numbers)
+        bool FindSum(long value, IEnumerable<long> numbers)
         {
-            foreach (Int64 number in numbers)
+            foreach (long number in numbers)
             {
-                Int64 remainder = value - number;
+                long remainder = value - number;
                 if (remainder != number && numbers.Contains(remainder))
                 {
                     return true;
@@ -35,7 +33,7 @@ namespace AdventOfCode2020
 
         private void RunTest1()
         {
-            Queue<Int64> availableNumbers = new Queue<Int64>();
+            Queue<long> availableNumbers = new Queue<long>();
 
             for (int index = 0; index < 25; index++)
             {
@@ -56,11 +54,11 @@ namespace AdventOfCode2020
         }
         private void RunTest2()
         {
-            Int64 valueToFind = 756008079;
+            long valueToFind = 756008079;
 
             for (int startIndex = 0; startIndex < input.Length; startIndex++)
             {
-                Int64 value = 0;
+                long value = 0;
 
                 for (int endIndex = startIndex; endIndex < input.Length; endIndex++)
                 {
@@ -68,12 +66,12 @@ namespace AdventOfCode2020
 
                     if (value == valueToFind)
                     {
-                        IEnumerable<Int64> range = input
+                        IEnumerable<long> range = input
                             .Skip(startIndex)
                             .Take(endIndex - startIndex);
 
-                        Int64 minValue = range.Min();
-                        Int64 maxValue = range.Max();
+                        long minValue = range.Min();
+                        long maxValue = range.Max();
 
                         Console.WriteLine("{0}", minValue + maxValue);
                         return;
@@ -86,6 +84,6 @@ namespace AdventOfCode2020
             }
         }
 
-        private Int64[] input;
+        private long[] input;
     }
 }

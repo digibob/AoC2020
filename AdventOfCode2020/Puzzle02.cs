@@ -37,7 +37,7 @@ namespace AdventOfCode2020
             RunPart2();
         }
 
-        public void RunPart1()
+        private void RunPart1()
         {
             int count = entries.Count(x =>
             {
@@ -48,7 +48,7 @@ namespace AdventOfCode2020
 
             Console.WriteLine("{0}", count);
         }
-        public void RunPart2()
+        private void RunPart2()
         {
             int count = entries.Count(x =>
             {

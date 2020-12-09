@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2020
 {
@@ -19,7 +15,7 @@ namespace AdventOfCode2020
             RunPart2();
         }
 
-        public Int64 CheckSlope(int xs, int ys)
+        public long CheckSlope(int xs, int ys)
         {
             int w = lines[0].Length;
             int h = lines.Length;
@@ -39,13 +35,13 @@ namespace AdventOfCode2020
             return treeCount;
         }
 
-        public void RunPart1()
+        private void RunPart1()
         {
             Console.WriteLine("{0}", CheckSlope(3, 1));
         }
-        public void RunPart2()
+        private void RunPart2()
         {
-            Int64 result = CheckSlope(1, 1)
+            long result = CheckSlope(1, 1)
                 * CheckSlope(3, 1)
                 * CheckSlope(5, 1)
                 * CheckSlope(7, 1)

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2020
 {
@@ -19,7 +16,7 @@ namespace AdventOfCode2020
             RunPart2();
         }
 
-        void RunPart1()
+        private void RunPart1()
         {
             for (int index1 = 0; index1 < numbers.Length; index1++)
             {
@@ -34,7 +31,7 @@ namespace AdventOfCode2020
             }
         }
 
-        void RunPart2()
+        private void RunPart2()
         {
             for (int index1 = 0; index1 < numbers.Length; index1++)
             {
