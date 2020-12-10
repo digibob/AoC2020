@@ -30,8 +30,11 @@ namespace AdventOfCode2020
             //Puzzle08 puzzle08 = new Puzzle08(System.IO.File.ReadAllLines("inputs/puzzle08.txt"));
             //puzzle08.Run();
 
-            Puzzle09 puzzle09 = new Puzzle09(System.IO.File.ReadAllLines("inputs/puzzle09.txt"));
-            puzzle09.Run();
+            //Puzzle09 puzzle09 = new Puzzle09(System.IO.File.ReadAllLines("inputs/puzzle09.txt"));
+            //puzzle09.Run();
+
+            Puzzle10 puzzle10 = new Puzzle10(System.IO.File.ReadAllLines("inputs/puzzle10.txt"));
+            puzzle10.Run();
 
             Console.ReadLine();
         }
